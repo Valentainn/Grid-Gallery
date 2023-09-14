@@ -33,7 +33,7 @@
     font-weight: 400;
     margin: 0;
 }
-@media screen and (min-width:400px){
+@media screen and (min-width:500px){
     .hover-info{
         margin-block-end: 170px;
     }

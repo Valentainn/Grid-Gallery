@@ -55,7 +55,7 @@ img{
     border-radius: 20px;
     position: relative;
 }
-@media screen and (min-width:400px){
+@media screen and (min-width:500px){
     .titulo{
         font-size: 60px;
         text-align: start;
