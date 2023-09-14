@@ -1,0 +1,57 @@
+.position{
+    inline-size: 100%;
+    block-size: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+}
+.card:hover > .info{
+    display: none;
+}
+.card:hover > .position{
+    display: flex;
+}
+.hover-info{
+    position: absolute;
+    margin-block-end: 85px;
+    text-align: center;
+    color: #FFF;
+}
+.hover-info .ciudad{
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0;
+}
+.hover-info .estado{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+}
+@media screen and (min-width:400px){
+    .hover-info{
+        margin-block-end: 170px;
+    }
+    .hover-info .ciudad{
+        font-size: 40px;
+    }
+    .hover-info .estado{
+        font-size: 28px;
+    }
+}
+@media screen and (min-width:1800px){
+    .hover-info{
+        margin-block-end: 270px;
+    }
+    .hover-info .ciudad{
+        font-size: 90px;
+    }
+    .hover-info .estado{
+        font-size: 50px;
+    }
+}

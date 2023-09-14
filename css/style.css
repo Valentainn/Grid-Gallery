@@ -1,0 +1,119 @@
+@import url(./hover.css);
+body{
+    background: #000;
+    font-family: nunito;
+}
+.titulo{
+    color: #FFF;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    margin-block: 18px;
+}
+.gallery-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 50px;
+    gap: 10px;
+    padding: 10px;
+}
+.card{
+    position: relative;
+    grid-row: span 4;
+}
+.card.larg{
+    grid-row: span 5;
+}
+.card.med{
+    grid-row: span 3;
+}
+.info{
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    color: #FFF;
+    text-align: center;
+}
+.info .ciudad{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    margin-block: 0;
+}
+.info .estado{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    margin-block-end: 10px;
+    margin-block-start: 0;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    position: relative;
+}
+@media screen and (min-width:400px){
+    .titulo{
+        font-size: 60px;
+        text-align: start;
+        margin-block: 25px;
+    }
+    .gallery-content{
+        padding: 15px;
+        gap: 17px;
+    }
+    .card{
+        grid-row: span 6;
+    }
+    .card.larg{
+        grid-row: span 8;
+    }
+    .card.med{
+        grid-row: span 5;
+    }
+    .info{
+        padding: 8px;
+    }
+    .info .ciudad{
+        font-size: 23px;
+        margin-block: 8px;
+    }
+    .info .estado{
+        margin-block: 8px;
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:1800px){
+    .titulo{
+        font-size: 70px;
+        text-align: start;
+        margin-block: 35px;
+    }
+    .gallery-content{
+        padding: 15px;
+        gap: 17px;
+    }
+    .card{
+        grid-row: span 8;
+    }
+    .card.larg{
+        grid-row: span 10;
+    }
+    .card.med{
+        grid-row: span 7;
+    }
+    .info{
+        padding: 15px;
+    }
+    .info .ciudad{
+        font-size: 23px;
+        margin-block: 15px;
+    }
+    .info .estado{
+        margin-block: 15px;
+        font-size: 18px;
+    }
+}
